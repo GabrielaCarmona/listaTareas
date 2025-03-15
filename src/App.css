@@ -1,0 +1,104 @@
+/* Variables para la paleta de colores 'Light' */
+:root {
+  --contraste: #292D53;
+  --principal: #FFF;
+  --mostaza: #FFD546;
+  --body: #F5F6F8;
+  --gris: #C2C2C2;
+  --eliminar: rgb(207, 102, 102);
+  --progreso: rgb(252, 163, 99);
+  --editar: rgb(98, 190, 160);
+}
+
+/* Variables para la paleta de colores 'Dark' */
+
+[data-theme='dark'] {
+  --principal: #292D53;
+  --contraste: #FFF;
+  --mostaza: #FFD546;
+  --body: #0E0F11;
+  --gris: #7D8294;
+  --eliminar: rgb(207, 102, 102);
+  --progreso: rgb(252, 163, 99);
+  --editar: rgb(98, 190, 160);
+}
+
+/* Estilos generales */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  color: var(--negro);
+  background-color: var(--body);
+}
+
+h1 {
+  color: var(--contraste);
+  text-align: center;
+  margin: 20px;
+  font-size: 50px;
+}
+
+/* Estilos del contenedor principal */
+
+.app-tareas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.tareas-contenedor {
+  width: 900px;
+  min-height: 450px;
+  padding: 30px;
+  margin: 25px;
+  margin-top: 40px;
+  background-color: var(--principal);
+  border-radius: 26px;
+}
+
+.h1-amarillo {
+  color: var(--mostaza);
+  font-family: Permanent Marker, cursive;
+  font-size: 70px;
+}
+
+/* Estilos responsivos */
+
+@media (min-width: 280px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .h1-amarillo {
+    font-size: 40px;
+    font-weight: 100!important;
+  }
+
+  .tareas-contenedor {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 60px;
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: 480px) {
+  .tareas-contenedor {
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .tareas-contenedor {
+    width: 700px;
+  }
+}

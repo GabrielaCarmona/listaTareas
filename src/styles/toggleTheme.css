@@ -1,0 +1,50 @@
+.theme {
+    right: 10px;
+    top: 10px;
+    position: absolute;
+  }
+  
+  .theme .switch-theme {
+    background: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .theme .switch-theme::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: all .6s ease;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+  }
+  
+  .theme .active {
+    background: orange !important;
+    color: #000 !important;
+  }
+  
+  .theme .active::after {
+    left: unset !important;
+    right: 0 !important;
+  }
+  
+  .theme .switch-theme span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+  }
