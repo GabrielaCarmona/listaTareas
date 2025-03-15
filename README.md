@@ -15,14 +15,14 @@ Siguiendo estas sencillas indicaciones puedo asegurarte que no tendrás problema
 5. En tu navegador web ingresa la dirección "http://localhost:3000/".
 
 ## Decisiones de diseño
-###UX
+UX
 1. El objetivo principal de esta aplicacion es aliviar la carga mental del usuario ofreciendo ser una herramienta de manejo sencillo que le permita gestionar múltiples tareas en sus tres estados basicos: pendiente, en progreso y completada. 
 2. A modo de tutorial, aparecen 4 tareas predeterminadas que ayudan al usuario a comprender como interactuar con las funcionalidades de la aplicacion. 
 3. Para mantener una gestion simple, las tareas tienen un límite de 100 caracteres y no se permite agrear tareas sin contenido.
 4. Una vez que la tarea ha cambiado su estatus a "Completada" queda inhabilitado el icono "En progreso". Para habilitarlo nuevamente es necesario volver a marcar la tarea como "Pendiente" haciendo click en ella. Esta particularidad evita que tareas ya realizadas puedan puedan marcarse como "En progreso" por error de dedo.
 5. Para algunos usuarios es necesario llevar un registro de lo que se ha realizado durante su jornada o simplemente les motiva poder ver el progreso obtenido. En cambio, para otros usuarios solo es importante mantener visible lo que se está haciedo o falta por hacer. Por esa razón la opción "Eliminar tarea" se encuentra disponible independientemente del estado de la tarea.
 
-###UI
+UI
 1. Dark mode: El usuario puede configurar el esquema de colores que mejor le permita visualizar la aplicación en condiciones de poca o mucha luz.
 2. Diseño responsivo: La aplicación es adaptable al tamaño de distintos dispositivos, sin perder armonia y resolución, tampoco se cortan o traslapan sus elementos.
 3. Los iconos muestran de manera intuitiva cuál es su funcion.
