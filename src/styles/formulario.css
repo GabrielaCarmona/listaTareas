@@ -6,7 +6,7 @@
 }
 
 .tarea-input {
-  width: 650px;
+  width: 60%;
   font-size: 20px;
   background: none;
   color: var(--contraste);
@@ -32,6 +32,7 @@
 }
 
 .btnTarea {
+  width: 30%;
   border: 3px solid var(--mostaza);
   border-radius: 30px;
   padding: 15px;
@@ -59,6 +60,7 @@
 }
 
 @media (max-width: 480px) {
+
   .tarea-input {
     width: 150px;
     padding: 4px 6px;
@@ -67,6 +69,7 @@
   }
 
   .btnTarea {
+    width: 50%;
     border-radius: 30px;
     padding: 10px;
     font-size: 15px;
@@ -76,6 +79,8 @@
   .danger {
     font-size: 10px;
     width: 100%;
-    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
   }
 }
